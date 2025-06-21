@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --azul: #0066ff;
+      --rojo: #ff3a4e;
+      --amarillo: #ffde59;
+      --verde: #2ecc71;
+      --fondo: #f8f9fa;
+      --texto: #2c3e50;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--fondo);
+      color: var(--texto);
+      line-height: 1.6;
+    }
+    
+    header {
+      background: linear-gradient(135deg, var(--azul), var(--verde));
+      color: white;
+      padding: 1rem 0;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .logo {
+      height: 70px;
+      transition: transform 0.3s ease;
+    }
+    
+    .logo:hover {
+      transform: scale(1.05);
+    }
+    
+    .nav-link {
+      color: white;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 50px;
+      font-weight: bold;
+      margin: 0 5px;
+      transition: all 0.3s ease;
+    }
+    
+    .nav-link:hover {
+      background-color: white;
+      color: var(--azul) !important;
+      transform: translateY(-3px);
+    }
+    
+    .historia-img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      margin-bottom: 1rem;
+    }
+    
+    .historia-img:hover {
+      transform: scale(1.02);
+    }
+    
+    .img-caption {
+      font-style: italic;
+      color: #666;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    
+    .btn-volver {
+      display: block;
+      width: fit-content;
+      background: linear-gradient(135deg, var(--rojo), var(--amarillo));
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      margin: 3rem auto;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    
+    .btn-volver:hover {
+      transform: scale(1.05);
+      color: white;
+    }
+    
+    footer {
+      background: linear-gradient(135deg, var(--azul), var(--verde));
+      color: white;
+      padding: 2rem 0;
+      margin-top: 3rem;
+    }
+  </style>
+  <title>DELIZIA - Nosotros</title>
+</head>
+<body>
+  <header class="sticky-top">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <a href="inicio.html" class="text-decoration-none d-flex align-items-center">
+            <img src="logo.webp" alt="DELIZIA - Productos Lácteos" class="logo me-3">
+            <h1 class="text-white m-0">Nosotros</h1>
+          </a>
+        </div>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link px-3 py-2" href="inicio.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link px-3 py-2" href="nosotros.html">Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link px-3 py-2" href="productos.html">Productos</a></li>
+              <li class="nav-item"><a class="nav-link px-3 py-2" href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <section class="mb-5">
+      <h2 class="text-center mb-4">Nuestra Historia</h2>
+      
+      <div class="text-center mb-4">
+        <img src="imagencentral.png" alt="Fundadores de DELIZIA en 1988" class="historia-img">
+        <p class="img-caption">Fundadores de DELIZIA en sus inicios (1988)</p>
+      </div>
+      
+      <p class="text-justify">Desde 1988 elaboramos productos lácteos con amor y tradición. La empresa Delizia, 
+        líder en la producción y venta de helados en Bolivia, fue fundada en 1988 en La Paz 
+        por un matrimonio que trabajaba como distribuidores de yogur. Iniciaron con la 
+        fabricación de helados de agua llamados "bolo" y con el tiempo se expandieron a otros 
+        productos lácteos y bebidas. Actualmente, Delizia cuenta con plantas en La Paz y Santa
+         Cruz y genera miles de empleos directos e indirectos.</p>
+    </section>
+
+    <a href="inicio.html?t=1" class="btn btn-volver">¡Volver al Inicio!</a>
+  </main>
+
+  <footer>
+    <div class="container text-center">
+      <p class="mb-0">© 2025 DELIZIA. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
